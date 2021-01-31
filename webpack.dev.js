@@ -36,11 +36,11 @@ module.exports = () =>
                 chunks: ["app"],
             }),
             // 複数のhtmlならファイル名が必要
-            new HtmlWebpackPlugin({
-                template: "./src/other.html",
-                // bodyへscriptタグを入れる
-                inject: "body",
-                chunks: ["sub"],
-            }),
+            // new HtmlWebpackPlugin({
+            //     template: "./src/other.html",
+            //     // bodyへscriptタグを入れる
+            //     inject: "body",
+            //     chunks: ["sub"],
+            // }),
         ],
     });
