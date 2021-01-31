@@ -1,0 +1,24 @@
+{
+    "env": {
+        //     // これがないとconsole.logをeslintがはじく
+        //     // ブラウザ上でのjavaScriptだと宣言
+        //     // それぞれの時代のグローバルオブジェクトがある前提での文法チェック
+        //     // es2017(es8)ならwindow
+        "browser": true,
+        "es2017": true,
+        // requireでエラーが出なくなる
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parser": "@babel/eslint-parser",
+    "globals": {
+        "jQuery": "readonly",
+        "$": "readonly",
+        "utils": "readonly"
+    },
+    "rules": {
+        // 未定義変数はエラーという判定
+        "no-undef": "error",
+        "semi": ["error", "always"]
+    }
+}

@@ -1,0 +1,20 @@
+h1 {
+    font-size: 2em;
+    //　変遷の時間とするもの
+    transition: all 0.3s;
+    color: blue;
+    &:hover {
+        transform: translateX(50px);
+        color: rgb(236, 18, 18);
+    }
+}
+
+.bg {
+    // scss内でエイリアスを使うにはチルダ(~)を接頭辞として置く。
+    // background-image: url("~@imgs/favicon.ico");
+    // modulesオプションを利用した記述
+    background-image: url("~images/favicon.ico");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,18 @@
+h1 {
+  font-size: 2em;
+  transition: all 0.3s;
+  color: blue;
+}
+h1:hover {
+  transform: translateX(50px);
+  color: #ec1212;
+}
+
+.bg {
+  background-image: url(images/favicon.ico);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=0.css.map*/

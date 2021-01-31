@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        // jsconfig.jsonからメインフォルダへの相対パス
+        "baseUrl": "./src",
+        "paths": {
+            // srcパスからの記述src/scssなのでscssのみ記述
+            "@scss": ["scss"],
+            "scss": ["scss"],
+            "js": ["js"],
+            "images": ["images"]
+        }
+    }
+}
